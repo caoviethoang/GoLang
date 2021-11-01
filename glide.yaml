@@ -1,0 +1,3 @@
+package: TinderAPI
+import:
+- package: github.com/go-sql-driver/mysql

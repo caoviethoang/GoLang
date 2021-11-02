@@ -21,24 +21,7 @@ func init() {
 		glog.Fatal("Failed to register database %v", err)
 	}
 
-	// name := "default"
-
-	// // Drop table and re-create.
-	// force := true
-
-	// // Print log.
-	// verbose := true
-
-	// // Error.
-	// err1 := orm.RunSyncdb(name, force, verbose)
-	// if err1 != nil {
-	// 	glog.Fatal("Failed to run sync, error: %v ", err1)
-	// }
 }
-
-// type User struct {
-// 	Usermame string `json:"username"`
-// }
 
 type User struct {
 	UserId     uint32
@@ -87,38 +70,5 @@ func main() {
 
 	InsertFakeData(200000)
 	// fmt.Println(gofakeit.Number(100000, 10000000))
-
-	// fmt.Println("Go MySQL")
-
-	// db, err := sql.Open("mysql", "root:Caoviethoang@tcp(127.0.0.1:3306)/gotest")
-	// if err != nil {
-	// 	panic(err.Error())
-	// }
-	// defer db.Close()
-
-	// insert, err := db.Query("INSERT INTO users VALUES('Hoang')")
-	// if err != nil {
-	// 	panic(err.Error())
-	// }
-
-	// defer insert.Close()
-	// fmt.Println("Succesfully inserted into MySQL database")
-
-	// results, err := db.Query("SELECT username from users")
-
-	// if err != nil {
-	// 	panic(err.Error())
-	// }
-
-	// for results.Next() {
-	// 	var username User
-
-	// 	err = results.Scan(&username.Usermame)
-	// 	if err != nil {
-	// 		panic(err.Error())
-	// 	}
-
-	// 	fmt.Println(username.Usermame)
-	// }
 
 }

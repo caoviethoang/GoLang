@@ -92,7 +92,7 @@ func initializeRouter() {
 func main() {
 
 	InsertFakeData(200000)
-	// InitialMigration()
-	// fmt.Println("Successfully connected to database")
-	// initializeRouter()
+	InitialMigration()
+	fmt.Println("Successfully connected to database")
+	initializeRouter()
 }
